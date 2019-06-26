@@ -1,0 +1,45 @@
+{
+    "weather": [
+        {
+            "day": "Monday",
+            "type": "Sunny",
+            "temp": "32"
+        },
+        {
+            "day": "Tuesday",
+            "type": "Raining",
+            "temp": "32"
+        },
+        {
+            "day": "Monday",
+            "type": "Sunny",
+            "temp": "32"
+        },
+        {
+            "day": "Tuesday",
+            "type": "Raining",
+            "temp": "32"
+        },
+        {
+            "day": "Monday",
+            "type": "Sunny",
+            "temp": "32"
+        },
+        {
+            "day": "Tuesday",
+            "type": "Raining",
+            "temp": "32"
+        },
+        {
+            "day": "Monday",
+            "type": "Sunny",
+            "temp": "32"
+        },
+        {
+            "day": "Tuesday",
+            "type": "Raining",
+            "temp": "32"
+        }
+    ]
+
+}

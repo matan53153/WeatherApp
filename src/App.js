@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Raining from "./raining.png"
+import Sunny from "./sunny.png"
+import Day from "./Day.js"
+import weather from "./weather.json"
+import EachDay from "./EachDay.js"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+        CurrentPicture: weather.weather
+    }
+  }
+  
+  render() {
+    return (<div> 
+      {this.state.CurrentPicture.map(function(eachDay) {
+        const result = EachDay(eachDay) 
+        return (
+          <Day 
+            day={eachDay.day}
+            type={eachDay.type}
+            temp={eachDay.temp}
+          />
+        )
+      })}
+    </div>)
+  }
 }
 
-export default App;
+export default App
